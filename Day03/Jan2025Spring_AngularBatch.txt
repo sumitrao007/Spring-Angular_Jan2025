@@ -1,0 +1,11 @@
+Last Lecture Agenda
+1 Hibernate Configuration
+
+
+
+Today's Lecture Agenda
+1 Hibernate functions
+	1 Insert 
+		persist(song);
+	2 get particular data 
+		get(Song.class,1)
