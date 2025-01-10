@@ -1,0 +1,93 @@
+Last Lecture Agenda
+1 Hibernate functions
+	1 Insert 
+		persist(song);
+		
+		Configuration config = new Configuration();
+		config.configure("hibernate.cfg.xml");
+		config.addannotationClass(Song.class);
+		
+		Sessionfactory factory= config.buildSessionFactory();
+		Session session= factory.openSession();
+		session.beginTransction();
+		Song song=new Song(...);
+		
+		session.persit(song);
+		
+		session.gettranscation().commit();
+		session.close();
+		
+		
+		
+		
+		
+	2 get particular data 
+		get(Song.class,1)
+		
+		
+		Configuration config = new Configuration();
+		config.configure("hibernate.cfg.xml");
+		config.addannotationClass(Song.class);
+		
+		Sessionfactory factory= config.buildSessionFactory();
+		Session session= factory.openSession();
+		session.beginTransction();
+		Song s1= session.get(Song.class,2);
+		session.gettranscation().commit();
+		session.close();
+		Syso(s1);
+		
+Update 
+	Configuration config = new Configuration();
+		config.configure("hibernate.cfg.xml");
+		config.addannotationClass(Song.class);
+		
+		Sessionfactory factory= config.buildSessionFactory();
+		Session session= factory.openSession();
+		session.beginTransction();
+		
+		Song  s1= session.get(Song.class,2);
+		
+		s1.setName("");
+		...
+		session.merge(s1);
+		session.gettranscation().commit();
+		session.close();
+GetAllRecord
+
+	
+		Configuration config = new Configuration();
+		config.configure("hibernate.cfg.xml");
+		config.addannotationClass(Song.class);
+		
+		Sessionfactory factory= config.buildSessionFactory();
+		Session session= factory.openSession();
+		
+		CriteriaBuilder builder= session.getCriteriaBuilder();
+		Criteria<Song> critera= builder.createCQuery(Song.class);
+		Root<Song> root= critera.from(Song.class);
+			critera.select(root);
+		Query<Song> query= session.createQuery(critera);
+		List<song> list= query.list();
+		session.gettranscation().commit();
+		session.close();
+		...
+
+
+Today's Lecture Agenda
+1 Delete
+	steps 
+		1 configuration
+		2 addannotationClass
+		3 sessionFactory
+		4 session 
+		5 beginTransction
+		6 getRecord
+		7 remove()
+		8 commit 
+		9 close 
+		
+
+2 HQl 
+	- Hibernate Query Lang.
+	
