@@ -1,0 +1,44 @@
+Last Lecture Agenda
+1  HQl 
+	- Hibernate Query Lang.
+2 GetParticular Records
+	Steps
+		1 configuration
+		2 configure
+		3 addAnnotatipClass
+		4 factory
+		5 session
+		6 beginTransction
+		7 hqlQuery=> "from Song where id=:id";
+		8 Query<Song> query= session.createQuery(hqlQuery,Song.class);
+			query.setparameter("",);
+			Song s= query.uniqueRestult();
+			..
+			
+
+3 getAllRecord 
+1 configuration
+		2 configure
+		3 addAnnotatipClass
+		4 factory
+		5 session
+		6 beginTransction
+		String hqlquery="from Song";
+		Query<Song> query= session.createQuery(hqlQuery,Song.class);
+		List<Song> list= query.list();
+	
+4 Login User operation
+	
+	String hqlquery="from Song where username=:username and pwd=:pwd";
+	... query.uniqueRestult();
+	
+Today's Lecture Agenda
+1 Mapping 
+ - It is used to apply a join on table 
+	1 one to one 
+	2 many to one 
+	3 one to many 
+	4 many to many 
+2 one to one mapping 
+2 many To one mapping
+	
