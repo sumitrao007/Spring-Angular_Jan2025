@@ -1,0 +1,87 @@
+Last Lecture Agenda
+1 Delete
+	steps 
+		1 configuration
+		2 addannotationClass
+		3 sessionFactory
+		4 session 
+		5 beginTransction
+		6 getRecord
+		7 remove()
+		8 commit 
+		9 close 
+	Configuration config=new Configuration();
+	config.configure("..")
+	config.addAnnotatipClass(...)
+	SessionFactory factory= config.buildSessionFactory();
+	Sessionon session= factory.openSession();
+	session.beginTransction();
+	Song s= session.get(Song.class,id);
+	session.remove(s);
+	....
+	
+		
+
+2 HQl 
+	- Hibernate Query Lang.
+	update Operation 
+	
+	Configuration config=new Configuration();
+	config.configure("..")
+	config.addAnnotatipClass(...)
+	SessionFactory factory= config.buildSessionFactory();
+	Sessionon session= factory.openSession();
+	session.beginTransction();
+	String hqlQuery="update Song set name=:myname, singer=:mysinger where id=:id";
+	MutationQuey mQuery=session.createMutationQuery(hqlQuery);
+	mQuery.setParameter("myname","...");
+	....
+	
+	int status= mQuery.executeUpdate();
+	
+	if(status>0){
+	....
+	}else{
+	...
+	}
+	
+	delete Query 
+	
+	
+	Configuration config=new Configuration();
+	config.configure("..")
+	config.addAnnotatipClass(...)
+	SessionFactory factory= config.buildSessionFactory();
+	Sessionon session= factory.openSession();
+	session.beginTransction();
+	
+	String hqlQuery="delete Song where id=:id";
+	
+	MutationQuey mQuery=session.createMutationQuery(hqlQuery);
+	mQuery.setParameter("id",5);
+	int status= mQuery.executeUpdate();
+	
+	.....
+	
+	
+	
+	
+Today's Lecture Agenda
+1  HQl 
+	- Hibernate Query Lang.
+2 GetParticular Records
+	Steps
+		1 configuration
+		2 configure
+		3 addAnnotatipClass
+		4 factory
+		5 session
+		6 beginTransction
+		7 hqlQuery=> "from Song where id=:id";
+		8 Query<Song> query= session.createQuery(hqlQuery);
+			query.setparameter("",);
+			
+
+3 getAllRecord 
+4 Login User operation
+	
