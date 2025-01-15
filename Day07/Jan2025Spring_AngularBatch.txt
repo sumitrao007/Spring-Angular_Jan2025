@@ -1,0 +1,14 @@
+Last Lecture Agenda
+1  Mapping 
+ - It is used to apply a join on table 
+	1 one to one 
+	2 many to one 
+	3 one to many 
+	4 many to many 
+2 one to one mapping 
+2 many To one mapping
+
+Today's Lecture Agenda
+1 one to Many 
+
+	
