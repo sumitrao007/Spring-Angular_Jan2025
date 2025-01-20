@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+<bean id="s1" class="com.hefshine.entity.Student" >
+	<!-- <property name="id" value="9"></property>
+	<property name="name" value="Sumit"></property>
+	<property name="address" ref="addr"></property> -->
+	
+	<constructor-arg index="0" value="Sumit"></constructor-arg>
+	<constructor-arg index="1" ref="addr"></constructor-arg>
+	
+</bean>
+
+
+<bean id="addr" class="com.hefshine.entity.Address" >
+	<property name="city" value="Mumbai"></property>
+	
+</bean>
+
+
+
+</beans>
