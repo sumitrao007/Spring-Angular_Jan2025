@@ -1,0 +1,94 @@
+Last Lecture Agenda
+1 Dependancy Injection
+2 Annotation Based configuration
+3 @Bean
+3 @Component
+4 Difference Between @Bean & @Component
+
+@Bean
+1 The @Bean annotation is used to define a bean method within a configuration class.
+2 This method returns an instance of the bean that you want to define.
+3 typically used when you want to define a bean for a class that you do not control, such as a third-party library
+4 you can create a bean instance and customize its behavior as you needed.
+5 @Bean methods can have arguments, which can be used to inject dependencies into the bean instance.
+6 @Bean Preferable for to wire components from 3rd-party libraries 
+
+
+@Component
+1 The @Component annotation is a stereotype annotation that is used to mark a class as a component.
+2 A component is a general-purpose object that is managed by the Spring IoC container.Other stereotype annotations, such as @Service, @Repository, and @Controller.
+3 typically used when you want to define a bean for a class that you create yourself and that has a simple initialization process
+4 It is provides a convenient way to register a class as a bean without having to define a separate configuration class.
+5 @Component classes typically use constructor or setter injection to inject dependencies.
+6 @Component Preferable for component scanning and automatic wiring.
+
+
+
+Today's Lecture Agenda
+1 Autowire
+2 HttpRequest
+	It has Two part 
+	1 HttpHeader
+		- ip
+		- Server address
+		- Auth token
+		- Content Type
+			1 image
+			2 Audio
+			3 Video
+			4 Application/pdf
+			5 xlx
+			....
+			6 html/text
+		- Method 
+		- date 
+		- time 
+		- request param 
+		...
+		
+	2 HttpBody
+		- data 
+			1 json object 
+			2 html/text 
+			3 xml data (outdated)
+
+ & HttpResponse
+ 
+ 1 HttpHeader
+		- ip
+		- Server address
+		- Auth token
+		- Content Type
+			1 image
+			2 Audio
+			3 Video
+			4 Application/pdf
+			5 xlx
+			....
+			6 html/text
+		- Method 
+		- date 
+		- time 
+		- request param 
+		...
+		Status Code
+			1 2xx => Success, ok => 200-299
+			2 3xx => redirection => 300-399
+			3 4xx => Client Side Error => 400-499
+			4 5xx => Server side error => 500-5999
+		
+	2 HttpBody
+		- data 
+			1 json object 
+			2 html/text 
+			3 xml data (outdated)
+
+ 
+ 
+ Http Method 
+ 1 get => get the data from backend Server 
+ 2 Post => to send data from Fronte End server to backend Server 
+ 3 put => to update data to backend server 
+ 4 delete => to delete data to backend server 
+
+	
