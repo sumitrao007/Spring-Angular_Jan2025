@@ -1,0 +1,74 @@
+Last Lecture Agenda
+1 Autowire
+2 HttpRequest
+	It has Two part 
+	1 HttpHeader
+		- ip
+		- Server address
+		- Auth token
+		- Content Type
+			1 image
+			2 Audio
+			3 Video
+			4 Application/pdf
+			5 xlx
+			....
+			6 html/text
+		- Method 
+		- date 
+		- time 
+		- request param 
+		...
+		
+	2 HttpBody
+		- data 
+			1 json object 
+			2 html/text 
+			3 xml data (outdated)
+
+ & HttpResponse
+ 
+ 1 HttpHeader
+		- ip
+		- Server address
+		- Auth token
+		- Content Type
+			1 image
+			2 Audio
+			3 Video
+			4 Application/pdf
+			5 xlx
+			....
+			6 html/text
+		- Method 
+		- date 
+		- time 
+		- request param 
+		...
+		Status Code
+			1 2xx => Success, ok => 200-299
+			2 3xx => redirection => 300-399
+			3 4xx => Client Side Error => 400-499
+			4 5xx => Server side error => 500-5999
+		
+	2 HttpBody
+		- data 
+			1 json object 
+			2 html/text 
+			3 xml data (outdated)
+
+ 
+ 
+ Http Method 
+ 1 get => get the data from backend Server 
+ 2 Post => to send data from Fronte End server to backend Server 
+ 3 put => to update data to backend server 
+ 4 delete => to delete data to backend server 
+
+
+
+Today's Lecture Agenda
+1 Spring Boot 
+2 Request Mapping 
+
+	
