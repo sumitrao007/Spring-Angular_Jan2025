@@ -1,0 +1,36 @@
+Last Lecture Agenda
+1 Database Demo Continue
+
+getParticularRecord By Id 
+
+steps 
+1 getMapping
+2 path Variable 
+3 call service
+4 dao call 
+5 Person p= session.get(Person.class,id);
+6 Object return => Person 
+7 service object
+8 controller Object Return 
+
+Login api 
+input => name and mobileno
+response 
+	case1 if user is valid 
+			{
+				msg:"Valid User",
+				user:{
+				......
+				}
+			}
+	case 2 if user is invalid 
+			{
+				msg:"InValid User",
+				user:null
+			}
+
+
+Today's Lecture Agenda
+1 WorkFlow Project
+
+	
