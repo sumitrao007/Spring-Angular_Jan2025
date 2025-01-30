@@ -1,0 +1,27 @@
+Last Lecture Agenda
+1 WorkFlow Project Continue
+2 HW
+To create Login API 
+Input => emailid & mobileno
+
+Response 
+	case 1 Valid User
+	{
+		msg:"Valid User",
+		user:{
+		....
+		}
+	}
+	case 2 InValid User
+	{
+		msg:"InValid User",
+		user:null
+	}
+
+Today's Lecture Agenda
+1 WorkFlow Project Continue
+2 get list of all employee whose salary range in between 2000 to 10000	
+3 get list of all employee whose country name is same 
+4 get list of all employee whose status (active/inactive/suspend)
+
+	
