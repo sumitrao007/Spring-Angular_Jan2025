@@ -1,0 +1,12 @@
+Last Lecture Agenda
+1 WorkFlow Project Continue
+2 get list of all employee whose salary range in between 2000 to 10000	
+3 get list of all employee whose country name is same 
+4 get list of all employee whose status (active/inactive/suspend)
+
+Today's Lecture Agenda
+1 HW => Done 
+2 Angular 
+	
+
+	
