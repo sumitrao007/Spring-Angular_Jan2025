@@ -1,0 +1,23 @@
+<p>propertybinding works!</p>
+<!-- 
+    - To bind a data with attribute dynamically 
+    - It works only on attribute => html attribute/directive attribute/custom attribute
+    - It will use any html TAG 
+    - Property bindinf is never convert data type 
+
+    [attribute name]="propertyName"
+
+-->
+
+<input type="text" [value]="name" >
+
+<h2>Difference between string interpolation & property binding</h2>
+
+<div hidden=" {{isHidden}} ">
+    Display the text using string interpolation 
+</div>
+
+<div [hidden]="isHidden">
+    Display the text using Property Binding 
+</div>
+
