@@ -1,0 +1,101 @@
+Last Lecture Agenda
+1 Create Component
+	- Angular is component orientated arch.
+	- Component is responsible to render our view 
+	- component is work indendently  
+	- Component has 3 basics file 
+		1 Component file => .ts 
+		2 View File => .html 
+		3 Stylesheet file => .css 
+		4 testing => spec.ts 
+	- Component has only one ts file & one view file 
+	- Component has multiple stylesheet file 
+	
+	- we can create component in 2 ways 
+		1 manual creation 
+			
+			@Component({
+				selector:"app-employee",
+				templateUrl:"./...",
+				styleUrls:['./']
+			})
+			export class EmployeeComponent{
+			
+			
+			}
+			
+			app.module.ts 
+			declaration:[
+				EmployeeComponent
+			]
+			app.component.html
+			<app-employee>
+			
+		2 Through the CLI 
+			ng g c componentName 
+		
+2 Data Binding 
+	- To  display data dynamically to the end use for that we use data binding 
+	- data flow will be in one way direction & two way direction
+	- It has 2 types 
+		1 One way data binding 
+			- data flow from from component file to view file 
+			1 string interpolation
+			2 property binding
+			3 style binding
+			4 class binding
+			
+		2 Two way data binding
+
+3 string interpolation
+data type 
+	string (''/""), number(int, float,double,long,short),boolean(true/false),any(string/number/boolean)
+	void => it is a neutral data type 
+	null & undefined => it can be used value as well as data type type 
+	
+	n1:null or n1:any=null;
+	Literal 
+	n2 : string | null;
+	n3: number | string;
+	
+	<h2> {{name}}<h2>
+	<h2> {{num +num}}</h2>
+	<h2> {{isDisplay ? name :"s..."	
+	
+	.ts 
+	name:string='';
+	num:number=4;
+	isDisplay:boolean=true;
+	
+	
+4 Property Binding	
+	<input [value]="name">
+	.ts 
+	
+	name:string='';
+5 String interpolation VS Property Binding	
+	<div hidden=" {{isHiden}} ">
+	...
+	
+	<div [hidden]="isHiden">
+	
+	.ts 
+	isHiden:boolean=false;
+
+Today's Lecture Agenda
+1 Style Binding
+2 Class Binding
+3 bootstrap => 3rd party framework 
+	- we can use inbuilt classes 
+	- To make my application responsive
+	- To make ur application Attractive 
+	- Integrate in 2 ways 
+	1 offline integration
+	
+		
+	
+	2 online integration
+		- CDN 
+		- 24*7 internet is required
+
+	
