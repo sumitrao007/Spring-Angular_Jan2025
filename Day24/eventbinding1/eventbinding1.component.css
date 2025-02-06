@@ -1,0 +1,10 @@
+img{
+    width: 320px;
+    height: 320px;
+    cursor: pointer;
+}
+
+.bgClass{
+    background-color: green;
+    color: white;
+}

@@ -1,0 +1,57 @@
+Last Lecture Agenda
+1 Style Binding
+	<h2 [style.color]="mycolor"> ...</h2>
+		<h2 [style.color]="rating<4?'red':'green'"> ...</h2>
+		<div [ngStyle]="jsonObj">
+		..
+		
+	.ts 
+	mycolor:string="";
+	jsonObj={
+		color:"blue",
+		fontFamily:"...",
+		"font-size":"..."
+	}
+2 Class Binding
+	
+	<h2 [class]="myclass">
+	<h2 [class.danger]="rating<4"
+		[class.warning]="rating>4"
+	>
+	
+	<div [ngClass]="jsonObj">
+	
+	.ts 
+	myclass:string="...";
+	rating:number=21;
+	isError:boolean=true;
+	isSpecial:boolean=true;
+	
+	jsonObj={
+		"success":!this.isError,
+		"danger":this.isError,
+		"special":this.isSpecial
+	}
+	
+3 bootstrap => 3rd party framework 
+	- we can use inbuilt classes 
+	- To make my application responsive
+	- To make ur application Attractive 
+	- Integrate in 2 ways 
+	1 offline integration
+	
+	npm install bootstrap@5.0.2
+	
+	style.css 
+	@import "~bootstrap/dist/css/bootstrap.min.css";
+		
+	
+	2 online integration
+		- CDN 
+		- 24*7 internet is required
+
+	
+Today's Lecture Agenda
+1 Event Binding
+2 click event 
+3 Template ref Variable 

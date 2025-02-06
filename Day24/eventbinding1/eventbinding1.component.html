@@ -1,0 +1,33 @@
+<p>eventbinding1 works!</p>
+<!-- 
+    (eventName)="eventhandler"
+    - eventhandler => ur custom function
+    - u can apply any html tag
+    - eventName => Inbuilt event name 
+-->
+
+<button (click)="onClick()"
+class="btn btn-success"
+>Click</button><br><br>
+
+<img (click)="onImage()" 
+    title="on Image Click"
+src="../../assets/images/bg12.jpg" alt="">
+<br><br>
+
+<button (click)="onBtnClick()" [class]="myclass" >Hi Welcome</button>
+<br><br>
+<!-- Template ref Variable 
+    - It hold the Object/handle/refernce of particular html element
+    - U will get a data(full info about that element) from html element into ts file 
+    - with the help of Object u can mangae a bhaviour of element 
+    - #UniqueName 
+    - u can apply any html tag
+-->
+    <input #inputName type="text" class="form-control w-25" placeholder="Enter the Name"><br><br>
+    <button (click)="onSend(inputName)" class="btn btn-success">Send</button>
+    <hr>
+
+    <input #inputName1 type="text" class="form-control w-25" placeholder="Enter the Name"><br><br>
+    <button (click)="onSend1(inputName1.value)" class="btn btn-success">Send</button>
+
