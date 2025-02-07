@@ -1,0 +1,43 @@
+Last Lecture Agenda
+1 Event Binding
+
+	<button (click)="onClick()">
+	<img (click)="onImage()">
+	
+	.ts 
+	count:number=0;
+	onClick(){
+	if(this.count==0){
+	
+	...
+	}
+	....
+	}
+
+2 click event 
+3 Template ref Variable 
+
+	<input #inputname>
+	<button (click)="onSend(inputname)">
+	
+		<input #inputname1>
+	<button (click)="onSend1(inputname1.value)">
+	
+	.ts 
+	onSend(myvalue:any){
+		console.log(myvalue)
+		myvalue.value
+		myvalue.style.background="green"
+		...
+	}
+	
+	onSend1(value:string){
+		...
+	}
+
+	
+Today's Lecture Agenda
+1 Real Time Example
+2 Two Way Data Binding
+	- data bind/send in two way direction 
+	- U will get updatated Data 

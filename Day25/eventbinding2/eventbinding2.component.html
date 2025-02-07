@@ -1,0 +1,36 @@
+<p>eventbinding2 works!</p>
+
+<div class="container">
+    <label for="">Number1::</label>
+    <input #inputnum1 type="text" class="form-control w-25" placeholder="Enter the Number1"><br>
+    <label for="">Number2::</label>
+    <input #inputnum2 type="text" class="form-control w-25" placeholder="Enter the Number2"><br>
+    <button (click)="onAddition(inputnum1.value,inputnum2.value)" class="btn btn-success">Addition</button><br><br>
+    <label for="">Result::</label>
+    <input [value]="result" type="text" class="form-control w-25" placeholder=" Result"><br>
+</div>
+<hr>
+
+<div class="container">
+    <label for="">Number::</label>
+    <input #inputnum3 type="text" placeholder="Enter the Number" class="form-control w-25"><br>
+    <button (click)="onEvenOdd(inputnum3.value)" class="btn btn-info" >Find Even & Odd</button> <br><br>
+    
+    <div [style.background]="iseven?'green':'orange'">
+        <h2> {{evenOdd}} </h2>
+    </div>
+</div>
+<hr>
+
+<!-- 
+    ngModel
+    - It is Attribute Directive
+    - U will get updataed data into the property 
+    - We have to use FormsModule => App.module.ts file=> import section 
+    - It is used notation banana in the box notation
+    syntax 
+    [(ngModel)]="propertyName"
+    - U can apply any html tag 
+-->
+
+<input [(ngModel)]="name" type="text" placeholder="Enter the Name"> {{name}} 
