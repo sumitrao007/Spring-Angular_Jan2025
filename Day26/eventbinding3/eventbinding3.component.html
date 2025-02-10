@@ -1,0 +1,5 @@
+<p>eventbinding3 works!</p>
+
+<!-- <input type="text" class="form-control w-25" placeholder="Enter the Name " (change)="onChange()" [(ngModel)]="name" > -->
+
+<input type="text" #inputname class="form-control w-25" placeholder="Enter the Name " (change)="onChange1(inputname.value)">

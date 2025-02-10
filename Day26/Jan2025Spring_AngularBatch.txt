@@ -1,0 +1,42 @@
+Last Lecture Agenda
+1 Real Time Example
+
+<input #input1>
+<input #input2>
+<button (click)="onAddition(input1.value,input2.value)" > Addition
+<input [value]="result">
+
+.ts 
+
+onAddition(num1:any,num2:any){
+	let n1=+num1;
+	let n2=+num2;
+	this.result=n1+n2;
+	
+}
+
+2 Two Way Data Binding
+	- data bind/send in two way direction 
+	- U will get updatated Data 
+	app.module.ts 
+	import : [
+		FormsModule
+	]
+	
+	<input [(ngModel)]="name"> {{name}}
+	
+	.ts 
+	name:string='';
+	
+Today's Lecture Agenda
+1 Change Event
+	hw Find the fibonacci series of enter number 
+	
+2 Structural Directives
+	- to modify/manipulate ur DOM (Document Object Model ) Structure dynamically for that we use structural directive
+	1 *ngIf => if u want to check condition dynamically and mofify ur DOM Structure according that 
+	2 *ngFor => if u want iterate dynamically then we use 
+	3 *ngSwitch => To execute a specific case for that we use 
+3 *ngIf directive
+4 Component Directive 
+	<ng-template>
