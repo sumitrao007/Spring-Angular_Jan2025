@@ -1,0 +1,51 @@
+Last Lecture Agenda
+1 Change Event
+	hw Find the fibonacci series of enter number 
+	<input [(ngModel)]="name" (change)="onChange()">
+	<input #inputname (change)="onChange(inputname.value)">
+	.ts 
+	name:string=''
+	onChange(){
+	if(this.name.length>6){
+		alert("...")
+	}
+	...
+	}
+	
+	onChange(myvalue:string){
+	if(myvalue.length>6){
+		alert("...")
+	}
+	...
+	}
+	
+2 Structural Directives
+	- to modify/manipulate ur DOM (Document Object Model ) Structure dynamically for that we use structural directive
+	1 *ngIf => if u want to check condition dynamically and mofify ur DOM Structure according that 
+	2 *ngFor => if u want iterate dynamically then we use 
+	3 *ngSwitch => To execute a specific case for that we use 
+3 *ngIf directive
+
+	<div *ngIf="rating<4">
+		<h2> ....
+	</div>
+	
+	<div *ngIf="rating<4;else myelsepart">
+		<h2> ....
+	</div>
+	
+	<ng-template #myelsepart>
+		<h2> ....
+	</ng-template>
+	
+	.ts 
+	rating:number=21;
+
+4 Component Directive 
+	<ng-template>
+	
+Today's Lecture Agenda
+1 For Directive
+2 Mouse event 
+	mouseover
+	mouseout
