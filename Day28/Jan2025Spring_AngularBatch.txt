@@ -1,0 +1,59 @@
+Last Lecture Agenda
+1 For Directive
+	[
+		{
+			name:"...".
+			price:1000,
+			qty:1
+		},
+		{
+			name:"...".
+			price:1000,
+			qty:1
+		}
+	]
+	
+	.html
+	
+	<table>
+		<thead>
+			<tr>
+				<th>..
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of arrProduct;index as i"
+				(mouseover)="onMouseOver(item)"
+				(mouseout)="onMouseOut()"
+				[ngClass]="{
+					'highlight':selected===item.name
+				}"
+				
+			>
+				<td> {{item.name}}</td>
+				...
+			</tr>
+		</tbody>
+	</table>
+	
+	.ts 
+	
+	onMouseOver(item:any){
+		this.selected=item.name;
+	}
+	
+	onMouseOut(){
+		this.selected='';
+	}
+	
+2 Mouse event 
+	mouseover
+	mouseout
+	
+Today's Lecture Agenda
+1 Switch Directive
+2 Component Interaction
+	- parent-child relationship 
+3 @Input() => to send data from parent to child 
+	- This decorator is proeprty level decorator
+
