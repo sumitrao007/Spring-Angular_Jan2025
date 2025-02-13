@@ -1,0 +1,35 @@
+<p>parent2 works!</p>
+<h2>Date: {{childDateReceived}} </h2>
+
+<h2> {{childRangeReceived}} </h2>
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Qty</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let item of childArrReceived;index as i "
+                                
+            >
+                <td> {{i+1}} </td>
+                <td> {{item.name}} </td>
+                <td> {{item.price}} </td>
+                <td> {{item.qty}} </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+
+<hr>
+<app-child2 (childDateEvent)="childDateReceived=$event" 
+    (childArrEvent)="childArrReceived=$event"
+    (childRangeEvent)="childRangeReceived=$event"
+></app-child2>

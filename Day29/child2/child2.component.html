@@ -1,0 +1,7 @@
+<p>child2 works!</p>
+<input #inputdate class="form-control w-25" type="date"><br><br>
+<button (click)="onSend(inputdate.value)" class="btn btn-success">Send</button>
+<hr>
+
+<input #inputRange type="range" min="0" max="10000" step="10"><br><br>
+<button (click)="onSendRange(inputRange.value)" >Send Range</button>
