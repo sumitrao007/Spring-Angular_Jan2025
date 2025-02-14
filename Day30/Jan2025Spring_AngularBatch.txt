@@ -1,0 +1,25 @@
+Last Lecture Agenda
+1 @Output()
+	- To send data from child component to parent 
+	
+Entity => Registration
+
+	1 first name 
+	2 Last name 
+	3 gender
+	4 emailid
+	5 mobile no 
+	6 addressCity
+	7 password
+	
+	API Create 
+	1 signUp
+	2 loginUser
+		input => email id & password 
+	response as it is as per login api u designed preivously 
+	
+
+	
+Today's Lecture Agenda
+1 Hw
+2 Project
