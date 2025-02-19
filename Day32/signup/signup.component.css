@@ -1,0 +1,33 @@
+.container {
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  .error {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+   
+  }
