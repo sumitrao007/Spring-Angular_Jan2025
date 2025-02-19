@@ -1,0 +1,26 @@
+Last Lecture Agenda
+1 Hw
+2 Project
+
+Today's Lecture Agenda
+1 Project Continue
+2 TDF
+	- Template driven form 
+	- login,signup,f/b 
+	- All basic level validation is performed on Html file 
+3 FormControl
+	- It is class 
+	
+	Property 
+	1 valid => true/false
+	2 invalid => true/ false 
+	3 touched  => true/false 
+	4 pristine => true / false
+	5 dirty => true /false 
+	6 errors => Object => if u want validate the attribute then we use errors Object 
+			=> true/false
+	
+	steps 
+	1 create the instance of FormControl=> We have to use ngModel without its notation & we have to use name attribute
+	2 create template ref var. & assign it ngModel
+	3 use required attribute & u can then validate ur element as well as attribute
