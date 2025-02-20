@@ -1,0 +1,36 @@
+Last Lecture Agenda
+1 
+attribute directive => 
+	1 ngClass,ngStyle,ngModel,ngForm,routerLink
+	Structural Directive 
+	2 *ngIf,*ngFor , *ngSwitch
+	
+	Component Directive 
+	<ng-template>, <router-outlet>
+	
+
+http Methods
+1 get => fetch a data from backend server 
+2 post => to send/create data from frontend server to backend server 
+3 put => to update a particular data / exsting data 
+4 delete => to delete a particular data 
+
+Http Request & Http Response
+
+Http Request => Http head + Http body
+
+Http Response => Http head + Http body 
+
+Service 
+	- It is a simple class 
+	
+	http://localhost:8080/api/
+	
+	http://localhost:8080/api/create-user
+	
+	
+	
+	
+	
+Today's Lecture Agenda
+1 Project Continue
