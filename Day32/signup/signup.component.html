@@ -8,7 +8,7 @@
         <input
           type="text"
           id="firstName"
-          name="firstName"
+          name="fname"
           class="form-control"
           placeholder="Enter the First Name"
           ngModel
@@ -26,7 +26,7 @@
         <input
           type="text"
           id="lastName"
-          name="lastName"
+          name="lname"
           class="form-control"
           placeholder="Enter the Last Name"
           ngModel
@@ -45,7 +45,7 @@
           type="email"
           [pattern]="EMAIL_PATTERN"
           id="email"
-          name="email"
+          name="emailid"
           class="form-control"
           ngModel
           required
@@ -118,9 +118,9 @@
       <div class="form-group mb-2">
         <label for="role">Gender </label>
         <label for="">
-            <input type="radio" name="gender" value="male">&nbsp;Male
+            <input type="radio" ngModel name="gender" value="male">&nbsp;Male
             &nbsp;&nbsp;&nbsp;
-            <input type="radio" name="gender" value="female">&nbsp;Female
+            <input type="radio" ngModel name="gender" value="female">&nbsp;Female
         </label>
         
       </div>

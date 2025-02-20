@@ -1,0 +1,51 @@
+<div class="login-container">
+
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" >
+        <h2>Login Form</h2>
+        <div class="form-group">
+            <label for="">Email::</label>
+            <input type="text"
+                [pattern]="EMAIL_PATTERN"
+                class="form-control"
+                ngModel name="email"
+                #email="ngModel"
+                required
+            placeholder="Enter the Email Id">
+
+            <div class="error" 
+                *ngIf="email.touched && email.invalid"
+            >** Please Enter the Email Id 
+
+                <div *ngIf="email.errors?.['pattern']">
+                    ** Please Enter the valid Email Id 
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="">Password::</label>
+            <input type="password" 
+                class="form-control"
+                ngModel name="password"
+                #password="ngModel"
+                required
+                placeholder="Enter the Password"
+            >
+
+            <div class="error" 
+            *ngIf="password.touched && password.invalid">
+                ** Please Enter the password
+
+            </div>
+            
+        </div>
+
+        <button  [disabled]="f.invalid" class="btn btn-outline-success">Login</button>&nbsp;&nbsp;&nbsp;
+
+        <a routerLink="/signup">? Register yourself</a>
+
+    </form>
+
+</div>
