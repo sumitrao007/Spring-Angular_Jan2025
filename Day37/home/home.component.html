@@ -1,0 +1,84 @@
+
+<app-header></app-header>
+
+<div class="container">
+    <button routerLink="/addemp" class="btn btn-success mt-5">Add Employee</button>
+</div>
+
+<section id="employees" class="py-5 mt-5">
+    <div class="container text-center bg-light">
+        <div class="row">
+            <div *ngFor="let employee of employees" class="col-md-4 mb-3 mt-3">
+                <div class="card employee-card shadow-lg border-0">
+                    <div class="card-body">
+                        <!-- Flexbox for side-by-side alignment with proper spacing -->
+                        <div class="d-flex align-items-center">
+                            <span class="text-muted font-weight-bold me-2">Name:</span>
+                           <a [routerLink]="['/empDetails',employee.id]"> <span class="text-uppercase">{{ employee.name }}</span></a>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <span class="text-muted font-weight-bold me-2">Status:</span>
+                           <h4> <span 
+                            [ngClass]="{
+                                'badge':true,
+                                'rounded-pill':true,
+                                'bg-success':employee.status.toLowerCase()=='active',
+                                'bg-warning':employee.status.toLowerCase()=='inactive',
+                                'bg-danger':employee.status.toLowerCase()=='suspend'
+                            }"
+
+                            >{{ employee.status }}</span></h4>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <span class="text-muted font-weight-bold me-2">Email Id:</span>
+                            <span class="text-success">{{ employee.emailid }}</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-2">
+                            <span class="text-muted font-weight-bold me-2">Mobile No:</span>
+                            <span class="text-success">{{ employee.mobileno }}</span>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <span class="text-muted font-weight-bold me-2">Department:</span>
+                            <span class="text-success">{{ employee.department }}</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-2">
+                            <span class="text-muted font-weight-bold me-2">Created By:</span>
+                            <span class="text-success">{{ employee.createdBy }}</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-2">
+                            <span class="text-muted font-weight-bold me-2">Created Date:</span>
+                            <span class="text-success">{{ employee.createdDate | date: 'mediumDate' }}</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-2">
+                            <span class="text-muted font-weight-bold me-2">Updated By:</span>
+                            <span class="text-success">{{ employee.updatedBy }}</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-2">
+                            <span class="text-muted font-weight-bold me-2">Updatated Date:</span>
+                            <span class="text-success">{{ employee.updatedDate | date:'dd-MM-yyyy' }}</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-2">
+                            <span class="text-muted font-weight-bold me-2">Country:</span>
+                            <span class="text-success">{{ employee.country.cname }}</span>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex align-items-center">
+                            <button [routerLink]="['/updateEmp',employee.id]" class="btn btn-warning" >Update</button>
+                            <button (click)="onDelete(employee.id)" class="btn btn-danger" >Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>
