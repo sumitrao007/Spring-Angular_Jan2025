@@ -1,0 +1,28 @@
+.footer {
+    background: #1a1a2e; /* Dark navy blue */
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.footer a:hover {
+    color: #00d4ff; /* Soft Cyan */
+}
+.footer .social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    display: inline-block;
+}
+.footer .social-icons a:hover {
+    transform: scale(1.2);
+}
+.footer .copyright {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
